@@ -1,4 +1,4 @@
-package com.numbergame;
+package com.guessthenumbergame;
 
 import android.app.Application;
 import android.content.Context;

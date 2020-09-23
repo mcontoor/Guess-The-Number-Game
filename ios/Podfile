@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'numberGame' do
-  # Pods for numberGame
+target 'guessthenumbergame' do
+  # Pods for guessthenumbergame
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,7 +34,7 @@ target 'numberGame' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'numberGameTests' do
+  target 'guessthenumbergameTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -42,10 +42,10 @@ target 'numberGame' do
   use_native_modules!
 end
 
-target 'numberGame-tvOS' do
-  # Pods for numberGame-tvOS
+target 'guessthenumbergame-tvOS' do
+  # Pods for guessthenumbergame-tvOS
 
-  target 'numberGame-tvOSTests' do
+  target 'guessthenumbergame-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
