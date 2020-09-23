@@ -103,7 +103,7 @@ const GameScreen = props => {
                 <Button title="HIGHER" onPress={nextGuessHandler.bind(this, 'greater')} />
             </Card>
             <FlatList
-                keyExtractor={item => item}
+                keyExtractor={item => `${item}`}
                 data={rounds}
                 renderItem={renderListItem.bind(this, rounds.length)}
                 contentContainerStyle={styles.list}
